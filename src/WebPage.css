@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Oi&family=Oswald:wght@300&family=Reggae+One&display=swap");
+.li_Div {
+  display: flex;
+  padding: 20px 0px;
+}
+.Ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+.div_2 {
+  display: flex;
+  flex-direction: row;
+}
+.name_Div {
+  display: flex;
+  height: 88vh;
+  width: 20rem;
+}
+@media only screen and (max-width: 500px) {
+  .name_Div {
+    height: 89vh;
+  }
+}
+.href_Div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 20rem;
+  margin-left: auto;
+}
+@media only screen and (max-width: 500px) {
+  .href_Div {
+    justify-content: flex-start;
+  }
+}
+.sub_href {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  color: #333;
+}
+@media only screen and (max-width: 500px) {
+  .sub_href {
+    gap: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
+.a,
+.b,
+.c,
+.d,
+.e {
+  color: white;
+  text-decoration: none;
+}
+.a1,
+.b1,
+.c1,
+.d1,
+.e1 {
+  color: white;
+  text-decoration: none;
+}
+.welcome {
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 3rem;
+  color: white;
+}
+.welcome2 {
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 3rem;
+  color: white;
+}
+@media only screen and (max-width: 500px) {
+  .welcome,
+  .welcome2 {
+    font-size: 2rem;
+    display: none;
+  }
+}
+.mo {
+  display: flex;
+  font-family: "Reggae One", cursive;
+  font-size: 3rem;
+  color: white;
+  margin-left: 40px;
+}
+@media only screen and (max-width: 500px) {
+  .mo {
+    font-size: 1.5rem;
+  }
+}
+.mo2 {
+  font-family: "Reggae One", cursive;
+  font-size: 3rem;
+  color: white;
+}
+
+.name {
+  display: flex;
+  margin-top: auto;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  color: whitesmoke;
+  margin-left: 50px;
+}
+.name2 {
+  display: flex;
+  margin-top: auto;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+@media only screen and (max-width: 500px) {
+  .name,
+  .name2 {
+    font-size: 1.5rem;
+  }
+}
+.icon {
+  height: 24px;
+  font-size: 30px;
+  cursor: pointer;
+}
