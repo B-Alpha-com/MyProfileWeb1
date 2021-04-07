@@ -1,58 +1,57 @@
 import React from "react";
 import "./WebPage.css";
-import bg from "./Asset/bg.jpg";
 import { faLightbulb } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import mypics from "./Asset/mypics.jpeg";
 
-const WebPage = ({ theme, onclick, condition }) => {
+const WebPage = ({ theme, onclick, condition, onshow }) => {
   return (
     <div className="container">
       <div className="li_Div">
         <ul className="Ul">
-          <li className={condition ? "mo" : "mo2"}>MO</li>
-          <li className={condition ? "welcome" : "welcome2"}>
-            You are welcome
-          </li>
+          <li className="mo">MO</li>
           <li>
             <i>
               <FontAwesomeIcon
                 className="icon"
                 onClick={onclick}
-                style={{ color: condition ? "white" : "white" }}
+                style={{ color: "white" }}
                 icon={faLightbulb}
               />
+              <span className="clickme">Click me</span>
             </i>
           </li>
         </ul>
       </div>
+      <div>
+        <div className="welcomeNote-Div">
+          <p className="welcomeNote">You are welcome to my Page</p>
+        </div>
+      </div>
       <div className="div_2">
         <div className="name_Div">
-          <p className={condition ? "name" : "name2"}>Mubarak Olasode:MO</p>
+          <div className="imageContainer">
+            <img src={mypics} alt="mypicture" className="myimage" />
+          </div>
+          <div className="name">
+            <p className="olasode">Mubarak Olasode:MO</p>
+          </div>
         </div>
         <div class="href_Div">
           <div className="sub_href">
-            <a
-              className={condition ? "a" : "a1"}
-              href="/Users/andela/Desktop/Project-Folder/myweb/src/Myprofile.html"
-            >
+            <p className="a" onClick={onshow}>
               My Profile
-            </a>
-            <a
-              className={condition ? "b" : "b1"}
-              href="https://twitter.com/OlasodeM"
-            >
+            </p>
+            <a className="b" href="https://twitter.com/OlasodeM">
               Twitter
             </a>
-            <a
-              className={condition ? "c" : "c1"}
-              href="https://github.com/B-Alpha-com"
-            >
+            <a className="c" href="https://github.com/B-Alpha-com">
               Github
             </a>
-            <a className={condition ? "d" : "d1"} href="www.twitter.com">
+            <a className="d" href="www.twitter.com">
               BlogPost
             </a>
-            <a className={condition ? "e" : "e1"} href="www.twitter.com">
+            <a className="e" href="www.twitter.com">
               Instagram
             </a>
           </div>

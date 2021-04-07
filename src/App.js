@@ -1,33 +1,44 @@
 import React, { Component } from "react";
 import WebPage from "./WebPage";
-import image from "./Asset/image2.jpg";
-import image1 from "./Asset/image1.jpg";
+import MyProfile from "./MyProfile";
+import "./WebPage.css";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       showImage: true,
+      showProfile: true,
     };
   }
-  handleClick = () => {
+  handleClick = (e) => {
     if (this.state.showImage === true) {
       this.setState({ showImage: false });
     } else {
       this.setState({ showImage: true });
     }
   };
+  handleClickProfile = (e) => {
+    if (this.state.showProfile === true) {
+      this.setState({ showProfile: false });
+    } else {
+      this.setState({ showProfile: true });
+    }
+  };
   render() {
     const Condition = this.state.showImage;
-    return (
-      <div
-        className="App"
-        style={{
-          backgroundImage: `url(${this.state.showImage ? image1 : image})`,
-          backgroundSize: "cover",
-        }}
-      >
-        <WebPage onclick={this.handleClick} condition={Condition} />
+    const showProfile = this.state.showProfile;
+    return showProfile ? (
+      <div className={Condition ? "App" : "App2"}>
+        <WebPage
+          onclick={this.handleClick}
+          condition={Condition}
+          onshow={(e) => this.handleClickProfile(e)}
+        />
+      </div>
+    ) : (
+      <div className="profile">
+        <MyProfile onshow={(e) => this.handleClickProfile(e)} />
       </div>
     );
   }

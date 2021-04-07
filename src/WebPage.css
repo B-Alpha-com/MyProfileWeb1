@@ -1,15 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Oswald:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Oi&family=Oswald:wght@300&family=Reggae+One&display=swap");
+.App {
+  display: flex;
+  margin-top: 0;
+  top: 0;
+  background-color: #183a37;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.App2 {
+  height: 100vh;
+  background-color: #333;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .App {
+    background-color: #183a37;
+  }
+  .App2 {
+    background-color: #333;
+  }
+}
+@media only screen and (max-width: 2000px) {
+  .App {
+    background-color: #183a37;
+  }
+  .App2 {
+    background-color: #333;
+  }
+}
 .li_Div {
   display: flex;
-  padding: 20px 0px;
+  padding-top: 20px 0px;
+  width: 100%;
 }
 .Ul {
   display: flex;
   list-style: none;
-  justify-content: space-between;
   width: 100%;
-  margin-top: 50px;
+}
+@media only screen and (max-width: 500px) {
+  .Ul {
+    margin-top: 10px;
+    justify-content: start;
+  }
 }
 .div_2 {
   display: flex;
@@ -17,12 +55,22 @@
 }
 .name_Div {
   display: flex;
-  height: 88vh;
-  width: 20rem;
+  flex-direction: column;
+  height: 70vh;
+  width: 15rem;
+}
+@media only screen and (max-width: 2000px) {
+  .name_Div {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 15rem;
+  }
 }
 @media only screen and (max-width: 500px) {
   .name_Div {
-    height: 89vh;
+    height: 71vh;
+    width: 15rem;
   }
 }
 .href_Div {
@@ -32,9 +80,58 @@
   width: 20rem;
   margin-left: auto;
 }
+@media only screen and (max-width: 2000px) {
+  .href_Div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 20rem;
+    margin-left: auto;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .href_Div {
+    width: 8rem;
+    height: 71vh;
     justify-content: flex-start;
+  }
+}
+.welcomeNote-Div {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .welcomeNote-Div {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+  }
+}
+.welcomeNote {
+  display: flex;
+  font-size: 2rem;
+  font-family: "Reggae One", cursive;
+  color: white;
+}
+@media only screen and (max-width: 2000px) {
+  .welcomeNote {
+    display: flex;
+    font-size: 2rem;
+    font-family: "Reggae One", cursive;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .welcomeNote {
+    display: flex;
+    font-size: 2rem;
+    font-family: "Reggae One", cursive;
+    color: white;
+    padding: 0;
+    margin-top: 0;
   }
 }
 .sub_href {
@@ -45,45 +142,37 @@
   font-family: "Oswald", sans-serif;
   color: #333;
 }
+@media only screen and (max-width: 2000px) {
+  .sub_href {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    color: #333;
+    cursor: pointer;
+  }
+}
 @media only screen and (max-width: 500px) {
   .sub_href {
     gap: 1rem;
     font-size: 1rem;
     cursor: pointer;
+    margin-left: 40px;
+    margin-top: 100px;
   }
 }
-.a,
+.a {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
 .b,
 .c,
 .d,
 .e {
   color: white;
   text-decoration: none;
-}
-.a1,
-.b1,
-.c1,
-.d1,
-.e1 {
-  color: white;
-  text-decoration: none;
-}
-.welcome {
-  font-family: "Akaya Telivigala", cursive;
-  font-size: 3rem;
-  color: white;
-}
-.welcome2 {
-  font-family: "Akaya Telivigala", cursive;
-  font-size: 3rem;
-  color: white;
-}
-@media only screen and (max-width: 500px) {
-  .welcome,
-  .welcome2 {
-    font-size: 2rem;
-    display: none;
-  }
 }
 .mo {
   display: flex;
@@ -95,12 +184,8 @@
 @media only screen and (max-width: 500px) {
   .mo {
     font-size: 1.5rem;
+    margin-left: 10px;
   }
-}
-.mo2 {
-  font-family: "Reggae One", cursive;
-  font-size: 3rem;
-  color: white;
 }
 
 .name {
@@ -110,24 +195,136 @@
   font-family: "Oswald", sans-serif;
   font-size: 2rem;
   color: whitesmoke;
-  margin-left: 50px;
+  margin-left: 40px;
 }
-.name2 {
-  display: flex;
-  margin-top: auto;
-  width: 100%;
-  font-family: "Oswald", sans-serif;
-  font-size: 2rem;
-  color: white;
+@media only screen and (max-width: 2000px) {
+  .name {
+    display: flex;
+    margin-top: auto;
+    width: 100%;
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-left: 40px;
+  }
 }
 @media only screen and (max-width: 500px) {
-  .name,
-  .name2 {
+  .name {
     font-size: 1.5rem;
+    height: 100px;
+  }
+  .olasode {
+    margin-bottom: 0;
   }
 }
 .icon {
   height: 24px;
   font-size: 30px;
   cursor: pointer;
+}
+@media only screen and (max-width: 2000px) {
+  .icon {
+    height: 24px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 1000px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .icon {
+    display: flex;
+    margin-left: 200px;
+  }
+}
+.imageContainer {
+  margin-left: 40px;
+  max-height: max-content;
+  max-width: max-content;
+}
+.myimage {
+  height: 400px;
+  width: 500px;
+}
+@media only screen and (max-width: 2000px) {
+  .myimage {
+    height: 400px;
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .myimage {
+    height: 350px;
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 2000px) {
+  .clickme {
+    position: relative;
+    color: aliceblue;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .clickme {
+    position: relative;
+    margin-left: 180px;
+    color: aliceblue;
+  }
+}
+
+/* //The profile styling starts. */
+
+.profile {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  height: 100vh;
+  margin-top: 0;
+  top: 0;
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.button-div {
+  display: flex;
+  margin-top: auto;
+  margin-left: auto;
+}
+.pagebutton {
+  padding: 2px 20px;
+  font-size: 0.8rem;
+  border-radius: 16px;
+}
+.sec-2 {
+  margin-top: 10px;
+}
+.h1 {
+  color: white;
+  font-weight: 500;
+}
+@media only screen and (max-width: 2000px) {
+  .h1 {
+    margin-left: 400px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .h1 {
+    margin-left: 0px;
+  }
+}
+.p {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: white;
+}
+.p1 {
+  font-size: 1rem;
+  color: white;
+}
+.business-span {
+  font-weight: bold;
 }
